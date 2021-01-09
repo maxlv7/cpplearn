@@ -1,0 +1,4 @@
+Constexpr.cpp
+constexpr,static_assert 关键字的使用
+constexpr 修饰的表达式/函数返回值必需为编译期常量
+static_assert 在编译期生效，其中第一个参数必需为编译期常量表达式
