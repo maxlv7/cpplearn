@@ -10,3 +10,4 @@ add_executable(ObjectArrayAndPoint Unit4/ObjectArrayAndPoint.cpp Unit4/Person.hp
 add_executable(ReturnObject Unit4/ReturnObject.cpp Unit4/Person.hpp)
 add_executable(ClassInit Unit4/ClassInit.cpp Unit4/Person.hpp)
 add_executable(Constexpr Unit5/Constexpr.cpp)
+add_executable(DelegationConstructor Unit5/DelegationConstructor.cpp)

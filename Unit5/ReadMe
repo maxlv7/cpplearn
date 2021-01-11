@@ -2,3 +2,8 @@ Constexpr.cpp
 constexpr,static_assert 关键字的使用
 constexpr 修饰的表达式/函数返回值必需为编译期常量
 static_assert 在编译期生效，其中第一个参数必需为编译期常量表达式
+
+
+DelegationConstructor.cpp
+c++11的代理构造
+代理构造：One ctor can call another ctor (一个构造函数可以调用另外的构造函数)
