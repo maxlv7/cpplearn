@@ -7,3 +7,20 @@ static_assert 在编译期生效，其中第一个参数必需为编译期常量
 DelegationConstructor.cpp
 c++11的代理构造
 代理构造：One ctor can call another ctor (一个构造函数可以调用另外的构造函数)
+
+Friend.cpp
+友元关键字的使用
+简单来说友元就是一个类或者一个函数可以访问其它类的私有成员
+
+CopyConstructor.cpp
+c++的拷贝构造函数
+以下几种情况均调用拷贝构造函数
+A c1( 5.0 );
+A c2( c1 );    //c++03
+A c3 = c1;     //c++03
+A c4 = { c1 }; //c++11
+A c5{ c1 };    //c++1
+
+StructuredBinding.cpp
+c++17 结构化绑定
+其实有点像python里面的解构
