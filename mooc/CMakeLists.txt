@@ -3,7 +3,6 @@ project(cpplearn)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(cpplearn main.cpp)
 add_executable(ObjectInit Unit4/ObjectInit.cpp Unit4/Person.hpp)
 add_executable(ObjectCopy Unit4/ObjectCopy.cpp Unit4/Person.hpp)
 add_executable(ObjectArrayAndPoint Unit4/ObjectArrayAndPoint.cpp Unit4/Person.hpp)
@@ -15,3 +14,4 @@ add_executable(Friend Unit5/Friend.cpp)
 add_executable(CopyConstructor Unit5/CopyConstructor.cpp)
 add_executable(StructuredBinding Unit5/StructuredBinding.cpp)
 add_executable(Inheritance Unit6/Inheritance.cpp Unit6/Person.hpp)
+add_executable(NameHidingInInheritance Unit6/NameHidingInInheritance.cpp Unit6/Person.hpp)
