@@ -26,7 +26,6 @@ public:
     }
 
     void show() {
-//        show("name");
         cout << "show B" << endl;
     }
 };
@@ -37,6 +36,7 @@ int main() {
     B b{};
     b.A::show("Test with A::show");
     b.show("Test Using A::show");
+    //向上强转
     static_cast<A>(b).show("Test Cast");
 
     //

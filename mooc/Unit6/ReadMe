@@ -10,3 +10,7 @@ NameHidingInInheritance.cpp
 继承中的名字隐藏
 1.基类同名函数被隐藏
 2.内部作用域的名字隐藏外部作用域的(同名)名字
+
+RunTimePolymorphism.cpp
+c++ 多态
+1.基类定义了虚同名函数，那么派生类中的同名函数自动变为虚函数
