@@ -14,3 +14,12 @@ NameHidingInInheritance.cpp
 RunTimePolymorphism.cpp
 c++ 多态
 1.基类定义了虚同名函数，那么派生类中的同名函数自动变为虚函数
+
+Accessibility.cpp
+c++访问控制
+三种不同的继承方式：public protect private
+简单来说通过什么方式的继承，在子类对象访问时，就变成了什么属性的成员
+
+VirtualFunction.cpp
+虚函数
+子类必需实现，类似于java的interface
