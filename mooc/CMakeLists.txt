@@ -18,3 +18,4 @@ add_executable(NameHidingInInheritance Unit6/NameHidingInInheritance.cpp Unit6/P
 add_executable(RunTimePolymorphism Unit6/RunTimePolymorphism.cpp)
 add_executable(Accessibility Unit6/Accessibility.cpp)
 add_executable(VirtualFunction Unit6/VirtualFunction.cpp)
+add_executable(Vec2D Unit8/vec2D_main.cpp unit8/Vec2D.hpp)
