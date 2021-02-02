@@ -23,6 +23,29 @@ public:
     Vec2D(double x, double y) : x_(x), y_(y) {
 
     };
+public:
+    //重载二元的运算符(+,-,*,/)
+    Vec2D operator+(Vec2D &vec2D) const {
+        return this->add(vec2D);
+    }
+
+    Vec2D operator+(double other) const {
+        return Vec2D(this->x_ + other, this->y_ + other);
+    }
+
+    // 重载二元的复合运算符(+=,-=,*=,/=)
+    Vec2D &operator+=(const Vec2D &other) {
+        this->x_ += other.x_;
+        this->y_ += other.y_;
+        return *this;
+    }
+
+    // 这里需要访问Vec2D类的私有成员函数
+    friend Vec2D operator+(double other, Vec2D &vec2D) {
+        auto x = vec2D.x_ + other;
+        auto y = vec2D.y_ + other;
+        return Vec2D(x, y);
+    }
 
 public:
     Vec2D add(Vec2D &vec2D) const {
