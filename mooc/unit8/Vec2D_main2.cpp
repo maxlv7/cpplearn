@@ -8,9 +8,11 @@ int main() {
     cout << a.toString() << endl;
     auto b = v1 + 10;
     cout << b.toString() << endl;
-    // 因为100没有重载+运算符,所以这里调用的是为的友元函数+
-    auto c = 100 + v2;
+    auto c = v1 - v2;
     cout << c.toString() << endl;
+    // 因为100没有重载+运算符,所以这里调用的是为的友元函数+
+    auto d = 100 + v2;
+    cout << d.toString() << endl;
 
 
     //重载二元的复合运算符(+=,-=,*=,/=)

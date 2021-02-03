@@ -24,6 +24,27 @@ public:
 
     };
 public:
+    //重载一元的运算符(-)
+    //作为对象成员的一元运算符无参数
+    Vec2D operator-() const {
+        return Vec2D(-this->x_, -this->y_);
+    }
+
+    //前置++
+    Vec2D &operator++() {
+        x_ += 1;
+        y_ += 1;
+        return *this;
+    }
+
+    //后置++
+    Vec2D operator++(int dummy) {
+        Vec2D temp{*this};
+        x_ += 1;
+        y_ += 1;
+        return temp;
+    }
+
     //重载二元的运算符(+,-,*,/)
     Vec2D operator+(Vec2D &vec2D) const {
         return this->add(vec2D);
@@ -31,6 +52,10 @@ public:
 
     Vec2D operator+(double other) const {
         return Vec2D(this->x_ + other, this->y_ + other);
+    }
+
+    Vec2D operator-(Vec2D &vec2D) const {
+        return Vec2D(this->x_ - vec2D.x_, this->y_ - vec2D.y_);
     }
 
     // 重载二元的复合运算符(+=,-=,*=,/=)
