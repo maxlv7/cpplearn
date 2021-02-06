@@ -24,6 +24,19 @@ public:
 
     };
 public:
+    //重载流操作输入符
+    //重载为成员函数
+    ostream &operator<<(ostream &os) {
+        os << "类成员<<" << endl;
+        return os;
+    }
+
+    friend ostream &operator<<(ostream &os, Vec2D &vec2D) {
+        os << "(" << vec2D.x_ << "," << vec2D.y_ << ")" << endl;
+        return os;
+    }
+
+public:
     //重载一元的运算符(-)
     //作为对象成员的一元运算符无参数
     Vec2D operator-() const {
