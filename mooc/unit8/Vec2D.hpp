@@ -24,6 +24,20 @@ public:
 
     };
 public:
+    //重载=
+    Vec2D &operator=(const Vec2D &that) {
+        this->x_ = that.x_ + 1;
+        this->y_ = that.y_ + 1;
+        return *this;
+    }
+
+public:
+    //重载对象转换运算符
+    operator double() const {
+        return magnitude();
+    }
+
+public:
     //重载流操作输入符
     //重载为成员函数
     ostream &operator<<(ostream &os) {
